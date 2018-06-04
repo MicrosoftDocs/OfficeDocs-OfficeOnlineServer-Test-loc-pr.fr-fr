@@ -480,5 +480,5 @@ Si vous nâ€™utilisez ni WSUS, ni System Center Gestionnaire de configuration, dÃ
 [Office.com (pour une aide avec Office Web Apps sur votre appareil mobile ou de bureau)](https://go.microsoft.com/fwlink/p/?linkid=266657)  
   
 
-[apply-software-updates-to-office-web-apps-server.md](apply-software-updates-to-office-web-apps-server.md)
+[https://technet.microsoft.com/fr-fr/library/jj966220](apply-software-updates-to-office-web-apps-server.md)
 
