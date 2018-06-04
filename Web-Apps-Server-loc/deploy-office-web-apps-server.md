@@ -1,4 +1,4 @@
-﻿---
+---
 title: Déployer Office Web Apps Server
 TOCTitle: Déployer Office Web Apps Server
 ms:assetid: e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5
@@ -426,9 +426,12 @@ Si des fonctionnalités de .NET Framework 3.5 ont été installées puis suppri
 
 **Pour Windows Server 2008 R2**
 
+```
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
-
+```
+```
     iisreset /restart /noforce
+```
 
 **Pour Windows Server 2012 ou Windows Server 2012 R2**
 
