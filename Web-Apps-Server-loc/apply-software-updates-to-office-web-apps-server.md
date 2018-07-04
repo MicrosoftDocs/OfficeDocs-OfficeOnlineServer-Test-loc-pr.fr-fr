@@ -46,7 +46,7 @@ Suite à la publication d'une nouvelle version d'Office Web Apps Server, Microso
 </thead>
 <tbody>
 <tr class="odd">
-<td>L'application de mises à jour Office Web Apps Server à l'aide du processus de mise à jour automatique n'est pas prise en charge avec Office Web Apps Server. Cela est dû au fait que les mises à jour Office Web Apps Server doivent être appliquées d'une certaine manière, comme indiqué dans le présent article. Si des mises à jour Office Web Apps Server sont appliquées automatiquement, les utilisateurs risquent de ne pas pouvoir afficher ou modifier de documents dans Office Web Apps. Si cette situation se produit, vous devrez reconstruire votre batterie Office Web Apps Server. Pour ce faire, vous devez supprimer le serveur Office Web Apps Server de la batterie à l'aide de <a href="remove-officewebappsmachine.md">Remove-OfficeWebAppsMachine</a>, désinstaller Office Web Apps Server dans Ajout/Suppression de programmes, puis réinstaller Office Web Apps Server en suivant la procédure décrite dans la rubrique <a href="deploy-office-web-apps-server.md">Déployer Office Web Apps Server</a>. Après la réinstallation, appliquez la mise à jour en suivant la procédure décrite dans le présent article.<br />
+<td>L'application de mises à jour Office Web Apps Server à l'aide du processus de mise à jour automatique n'est pas prise en charge avec Office Web Apps Server. Cela est dû au fait que les mises à jour Office Web Apps Server doivent être appliquées d'une certaine manière, comme indiqué dans le présent article. Si des mises à jour Office Web Apps Server sont appliquées automatiquement, les utilisateurs risquent de ne pas pouvoir afficher ou modifier de documents dans Office Web Apps. Si cette situation se produit, vous devrez reconstruire votre batterie Office Web Apps Server. Pour ce faire, vous devez supprimer le serveur Office Web Apps Server de la batterie à l'aide de <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a>, désinstaller Office Web Apps Server dans Ajout/Suppression de programmes, puis réinstaller Office Web Apps Server en suivant la procédure décrite dans la rubrique <a href="deploy-office-web-apps-server.md">Déployer Office Web Apps Server</a>. Après la réinstallation, appliquez la mise à jour en suivant la procédure décrite dans le présent article.<br />
 Il est essentiel de consulter les instructions de la rubrique <a href="plan-office-web-apps-server.md">Planification des mises à jour pour Office Web Apps Server</a> et d'établir un processus de mise à jour pour la batterie Office Web Apps Server.</td>
 </tr>
 </tbody>
@@ -59,7 +59,7 @@ La liste la plus récente des mises à jour disponibles pour Office Web Apps Ser
 
 Les mises à jour publiées pour Office Web Apps Server mettent à jour Office Web Apps Server et tous les modules linguistiques Office Web Apps Server installés. Il n'y a pas de mise à jour distincte pour les modules linguistiques Office Web Apps Server.
 
-Dans le cadre du processus de mise à jour, vous devrez recréer la batterie Office Web Apps Server. Afin de préparer la recréation de la batterie Office Web Apps Server, consultez les propriétés de votre batterie Office Web Apps Server actuelle en exécutant la cmdlet Windows PowerShell**Get-OfficeWebAppsFarm**, et observez les paramètres pour [New-OfficeWebAppsFarm](new-officewebappsfarm.md). Les paramètres utilisés pour **New-OfficeWebAppsFarm** doivent être identiques à ceux utilisés lors de la première installation de la batterie Office Web Apps Server.
+Dans le cadre du processus de mise à jour, vous devrez recréer la batterie Office Web Apps Server. Afin de préparer la recréation de la batterie Office Web Apps Server, consultez les propriétés de votre batterie Office Web Apps Server actuelle en exécutant la cmdlet Windows PowerShell**Get-OfficeWebAppsFarm**, et observez les paramètres pour [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps). Les paramètres utilisés pour **New-OfficeWebAppsFarm** doivent être identiques à ceux utilisés lors de la première installation de la batterie Office Web Apps Server.
 
 <table>
 <colgroup>
@@ -102,7 +102,7 @@ Pour appliquer des mises à jour logicielles dans une batterie Office Web Apps S
     
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
     
-    Des paramètres supplémentaires pour configurer les services de traduction, les serveurs proxy, la prise en charge des images clipart et les visionneuses en ligne sont décrits dans la rubrique [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+    Des paramètres supplémentaires pour configurer les services de traduction, les serveurs proxy, la prise en charge des images clipart et les visionneuses en ligne sont décrits dans la rubrique [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 ## Application des mises à jour logicielles dans une batterie Office Web Apps Server à plusieurs serveurs
 
@@ -126,7 +126,7 @@ Pour appliquer des mises à jour logicielles à une batterie Office Web Apps Ser
     
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
     
-    Des paramètres supplémentaires pour configurer les services de traduction, les serveurs proxy, la prise en charge des images clipart et les visionneuses en ligne sont décrits dans la rubrique [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+    Des paramètres supplémentaires pour configurer les services de traduction, les serveurs proxy, la prise en charge des images clipart et les visionneuses en ligne sont décrits dans la rubrique [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 6.  En fonction du nombre de serveurs présents dans la batterie Office Web Apps Server, équilibrez la charge du trafic vers la nouvelle batterie. Vous pouvez reporter cette étape jusqu'à ce que vous ayez plus de serveurs mis à jour dans la batterie.
 
@@ -143,10 +143,10 @@ Pour appliquer des mises à jour logicielles à une batterie Office Web Apps Ser
 ## Voir aussi
 
 
-[Remove-OfficeWebAppsMachine](remove-officewebappsmachine.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[Get-OfficeWebAppsFarm](get-officewebappsfarm.md)  
+[Remove-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[Get-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/get-officewebappsfarm?view=officewebapps-ps)  
 
 
 [Feuille de route de contenu pour Office Web Apps](content-roadmap-for-office-web-apps-server.md)  

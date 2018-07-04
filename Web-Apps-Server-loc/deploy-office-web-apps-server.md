@@ -251,7 +251,7 @@ Utilisez la commande **New-OfficeWebAppsFarm** pour créer une batterie de serve
 
   - **–EditingEnabled** active la modification dans Office Web Apps en cas d’utilisation avec SharePoint 2013. Ce paramètre n’est pas utilisé par Lync Server 2013 car cet hôte ne prend pas en charge la modification.
 
-Des paramètres supplémentaires pour configurer les services de traduction, les serveurs proxy, la prise en charge des images Clipart et les visionneuses en ligne sont décrits dans [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Des paramètres supplémentaires pour configurer les services de traduction, les serveurs proxy, la prise en charge des images Clipart et les visionneuses en ligne sont décrits dans [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 En cas d'affichage des messages « Exceptions de service web (500) » ou « Erreur interne du serveur (500.21) »
 
@@ -302,7 +302,7 @@ Utilisez la commande **New-OfficeWebAppsFarm** pour créer une batterie de serve
 
   - **–EditingEnabled** est facultatif et active la modification dans Office Web Apps en cas d’utilisation avec SharePoint 2013. Ce paramètre n’est pas utilisé par Lync Server 2013 car cet hôte ne prend pas en charge la modification.
 
-Des paramètres supplémentaires pour configurer les services de traduction, les serveurs proxy, la prise en charge des images Clipart et les visionneuses en ligne sont décrits dans [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Des paramètres supplémentaires pour configurer les services de traduction, les serveurs proxy, la prise en charge des images Clipart et les visionneuses en ligne sont décrits dans [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 En cas d'affichage des messages « Exceptions de service web (500) » ou « Erreur interne du serveur (500.21) »
 
@@ -375,7 +375,7 @@ Utilisez la commande **New-OfficeWebAppsFarm** pour créer une batterie de serve
 
   - **–EditingEnabled** est facultatif et active la modification dans Office Web Apps en cas d’utilisation avec SharePoint 2013. Ce paramètre n’est pas utilisé par Lync Server 2013 car cet hôte ne prend pas en charge la modification.
 
-D’autres paramètres pour configurer les services de traduction, les serveurs proxy, la prise en charge des images Clipart et les visionneuses en ligne sont décrits dans [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+D’autres paramètres pour configurer les services de traduction, les serveurs proxy, la prise en charge des images Clipart et les visionneuses en ligne sont décrits dans [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 En cas d'affichage des messages « Exceptions de service web (500) » ou « Erreur interne du serveur (500.21) »
 
@@ -385,7 +385,7 @@ Une fois que le premier serveur exécute Office Web Apps Server, exécutez la co
 
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
 
-Vous souhaitez plus d’informations sur ces paramètres ? Vous en trouverez dans la rubrique [New-OfficeWebAppsMachine](new-officewebappsmachine.md).
+Vous souhaitez plus d’informations sur ces paramètres ? Vous en trouverez dans la rubrique [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
 ## Étape 3 : vérifier que la batterie Office Web Apps Server a été correctement créée
 
@@ -437,8 +437,8 @@ Si des fonctionnalités de .NET Framework 3.5 ont été installées puis suppri
 ## Voir aussi
 
 
-[New-OfficeWebAppsFarm](new-officewebappsfarm.md)  
-[New-OfficeWebAppsMachine](new-officewebappsmachine.md)  
+[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps)  
+[New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps)  
 
 
 [Feuille de route de contenu pour Office Web Apps](content-roadmap-for-office-web-apps-server.md)  

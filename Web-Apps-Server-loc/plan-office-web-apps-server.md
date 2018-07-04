@@ -348,7 +348,7 @@ Voici une liste de recommandations que vous devez garder à l’esprit lorsque v
 
   - **Planifiez les communications entrantes et sortantes.** Dans un déploiement connecté à Internet, effectuez un routage de toutes les communications sortantes via un périphérique NAT. Dans une batterie de serveurs multiples, gérez toutes les communications entrantes avec un équilibrage de charge.
 
-  - **Assurez-vous que tous les serveurs de la batterie Office Web Apps Server sont joints à un domaine et font partie de la même unité d’organisation.** Utilisez le paramètre **FarmOU** dans la cmdlet [New-OfficeWebAppsFarm](new-officewebappsfarm.md) pour empêcher d’autres serveurs qui ne font pas partie de cette unité d’organisation de rejoindre la batterie de serveurs.
+  - **Assurez-vous que tous les serveurs de la batterie Office Web Apps Server sont joints à un domaine et font partie de la même unité d’organisation.** Utilisez le paramètre **FarmOU** dans la cmdlet [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) pour empêcher d’autres serveurs qui ne font pas partie de cette unité d’organisation de rejoindre la batterie de serveurs.
 
   - **Utilisez le protocole HTTPS pour toutes les demandes entrantes.**
 
@@ -414,13 +414,13 @@ Lorsque vous utilisez le protocole HTTP, le trafic en provenance du programme d�
 
 ## Restriction des serveurs qui peuvent rejoindre une batterie Office Web Apps Server selon leur appartenance à une unité d'organisation
 
-Vous pouvez empêcher l’accès des serveurs non autorisés à une batterie Office Web Apps Server en créant une unité d’organisation pour ces serveurs, puis en spécifiant le paramètre FarmOU au moment de la création de la batterie. Pour plus d’informations sur le paramètre FarmOU, voir [New-OfficeWebAppsFarm](new-officewebappsfarm.md).
+Vous pouvez empêcher l’accès des serveurs non autorisés à une batterie Office Web Apps Server en créant une unité d’organisation pour ces serveurs, puis en spécifiant le paramètre FarmOU au moment de la création de la batterie. Pour plus d’informations sur le paramètre FarmOU, voir [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
 ## Restriction de l'accès des hôtes à Office Web Apps Server à l'aide de la liste autorisée
 
 La liste autorisée est une fonctionnalité de sécurité qui empêche les hôtes indésirables de se connecter à une batterie Office Web Apps Server et de l’utiliser pour effectuer des opérations sur les fichiers sans votre consentement. En ajoutant les domaines approuvés à la liste autorisée, vous pouvez limiter les hôtes pour lesquels Office Web Apps Server autorise les demandes d’opérations sur les fichiers, comme l’extraction de fichiers, l’extraction de métadonnées et les modifications de fichiers.
 
-Vous pouvez ajouter des domaines à la liste autorisée après la création de la batterie Office Web Apps Server. Pour plus d’informations sur l’ajout de domaines à la liste autorisée, voir [New-OfficeWebAppsHost](new-officewebappshost.md).
+Vous pouvez ajouter des domaines à la liste autorisée après la création de la batterie Office Web Apps Server. Pour plus d’informations sur l’ajout de domaines à la liste autorisée, voir [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
 <table>
 <thead>
@@ -438,19 +438,19 @@ Vous pouvez ajouter des domaines à la liste autorisée après la création de l
 
 ## Planification des visionneuses en ligne avec Office Web Apps Server
 
-Par défaut, la fonctionnalité de visionneuse en ligne est activée après l’installation d’Office Web Apps Server. Consultez les instructions suivantes si vous prévoyez d’utiliser des visionneuses en ligne dans votre organisation. Dans certains cas, vous pouvez préférer désactiver certaines fonctionnalités des visionneuses en ligne. Ces instructions font référence aux paramètres configurés à l’aide des cmdlets Windows PowerShell[New-OfficeWebAppsFarm](new-officewebappsfarm.md) et [Set-OfficeWebAppsFarm](set-officewebappsfarm.md).
+Par défaut, la fonctionnalité de visionneuse en ligne est activée après l’installation d’Office Web Apps Server. Consultez les instructions suivantes si vous prévoyez d’utiliser des visionneuses en ligne dans votre organisation. Dans certains cas, vous pouvez préférer désactiver certaines fonctionnalités des visionneuses en ligne. Ces instructions font référence aux paramètres configurés à l’aide des cmdlets Windows PowerShell[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) et [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps).
 
 ## Considérations relatives à la sécurité des visionneuses en ligne
 
 Les fichiers destinés à être consultés via des visionneuses en ligne dans un navigateur web ne doivent pas demander d’authentification. En d’autres termes, les fichiers doivent être disponibles publiquement, car les visionneuses en ligne ne peuvent pas effectuer d’authentification au moment de l’extraction des fichiers. Nous vous recommandons fortement de limiter l’accès de la batterie Office Web Apps Server utilisée pour les visionneuses en ligne à un intranet ou à Internet, et non aux deux à la fois. En effet, Office Web Apps Server ne fait pas de distinction entre les demandes d’URL intranet et Internet. Si une demande provient d’Internet pour une URL intranet, par exemple, une faille de sécurité peut se produire si un document interne est visualisé.
 
-Pour la même raison, si vous avez configuré Office Web Apps Server pour qu’il ne se connecte qu’à Internet, nous vous conseillons fortement de désactiver la prise en charge UNC dans les visionneuses en ligne. Pour désactiver la prise en charge UNC, définissez le paramètre OpenFromUncEnabled sur False à l’aide de la cmdlet Windows PowerShell[New-OfficeWebAppsFarm](new-officewebappsfarm.md) (pour les nouvelles batteries) ou [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (pour les batteries existantes).
+Pour la même raison, si vous avez configuré Office Web Apps Server pour qu’il ne se connecte qu’à Internet, nous vous conseillons fortement de désactiver la prise en charge UNC dans les visionneuses en ligne. Pour désactiver la prise en charge UNC, définissez le paramètre OpenFromUncEnabled sur False à l’aide de la cmdlet Windows PowerShell[New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (pour les nouvelles batteries) ou [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (pour les batteries existantes).
 
 Par mesure de sécurité supplémentaire, les visionneuses en ligne sont limitées à l’affichage de fichiers Office dont la taille est inférieure ou égale à 10 Mo.
 
 ## Options de configuration des visionneuses en ligne
 
-Vous pouvez configurer des visionneuses en ligne à l’aide des paramètres Windows PowerShell suivants dans [New-OfficeWebAppsFarm](new-officewebappsfarm.md) (pour les nouvelles batteries) ou [Set-OfficeWebAppsFarm](set-officewebappsfarm.md) (pour les batteries existantes).
+Vous pouvez configurer des visionneuses en ligne à l’aide des paramètres Windows PowerShell suivants dans [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps) (pour les nouvelles batteries) ou [Set-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/set-officewebappsfarm?view=officewebapps-ps) (pour les batteries existantes).
 
   - **OpenFromUrlEnabled** : active ou désactive les visionneuses en ligne. Ce paramètre contrôle les visionneuses en ligne pour les fichiers qui disposent de chemins d’accès URL et UNC. Par défaut, ce paramètre est défini sur False (désactivé) quand vous créez une batterie Office Web Apps Server.
 

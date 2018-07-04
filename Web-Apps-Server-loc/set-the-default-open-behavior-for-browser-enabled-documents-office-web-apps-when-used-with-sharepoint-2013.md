@@ -27,7 +27,7 @@ Pour ouvrir un document dans une bibliothèque de documents SharePoint 2013, cli
 
 Par défaut, une fois SharePoint 2013 configuré pour utiliser Office Web Apps Server, les fichiers Word, PowerPoint, Excel ou OneNote s’ouvrent dans le navigateur lorsque vous cliquez dessus. Les documents PDF s’ouvrent dans Word Web App Web App. Il existe deux méthodes pour modifier le comportement par défaut de façon à ce que les fichiers s’ouvrent dans les applications clientes (ou le lecteur PDF par défaut) à la place :
 
-  - **Pour la batterie de serveurs SharePoint 2013**   Vous pouvez ajuster le comportement d’ouverture par défaut en fonction du type de fichier pour la batterie de serveurs SharePoint 2013 à l’aide des cmdlets [New-SPWOPIBinding](new-spwopibinding.md) et [Set-SPWOPIBinding](set-spwopibinding.md)Windows PowerShell. Ces cmdlets peuvent également être utilisées pour [ajuster le comportement des documents PDF](http://go.microsoft.com/fwlink/p/?linkid=330246).
+  - **Pour la batterie de serveurs SharePoint 2013**   Vous pouvez ajuster le comportement d’ouverture par défaut en fonction du type de fichier pour la batterie de serveurs SharePoint 2013 à l’aide des cmdlets [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps) et [Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps)Windows PowerShell. Ces cmdlets peuvent également être utilisées pour [ajuster le comportement des documents PDF](http://go.microsoft.com/fwlink/p/?linkid=330246).
 
   - **Dans les collections de sites ou les bibliothèques de documents**   Les administrateurs et les utilisateurs d’une collection de sites peuvent utiliser la fonctionnalité OpenInClient dans SharePoint 2013 pour indiquer si les fichiers Office doivent être ouverts dans l’application cliente ou dans le navigateur. Les utilisateurs peuvent modifier ce paramètre dans les propriétés de bibliothèque de documents, et les administrateurs de collection de sites peuvent le modifier dans Administration de la collection de sites ou à l’aide de la cmdlet [Enable-SPFeature](https://technet.microsoft.com/fr-fr/library/ff607803\(v=office.15\)) pour activer la fonctionnalité OpenInClient. Consultez la section suivante pour découvrir les différentes méthodes d’activation de la fonctionnalité OpenInClient .
 
@@ -59,7 +59,7 @@ Utilisez l’une des procédures suivantes pour définir la fonctionnalité Open
 </thead>
 <tbody>
 <tr class="odd">
-<td>Certaines de ces procédures utilisent SharePoint 2013 Management Shell pour exécuter les cmdlets SharePoint. Si vous utilisez la console Windows PowerShell, vous devez ajouter le composant logiciel enfichable Microsoft.SharePoint.PowerShell à l’aide de la cmdlet <strong>Add-PSSnapin</strong>. Pour plus d’informations sur l’utilisation de Windows PowerShell avec SharePoint 2013, voir <a href="use-windows-powershell-to-administer-sharepoint-2013.md">Utiliser Windows PowerShell pour administrer SharePoint 2013</a>.</td>
+<td>Certaines de ces procédures utilisent SharePoint 2013 Management Shell pour exécuter les cmdlets SharePoint. Si vous utilisez la console Windows PowerShell, vous devez ajouter le composant logiciel enfichable Microsoft.SharePoint.PowerShell à l’aide de la cmdlet <strong>Add-PSSnapin</strong>. Pour plus d’informations sur l’utilisation de Windows PowerShell avec SharePoint 2013, voir <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Utiliser Windows PowerShell pour administrer SharePoint 2013</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -109,7 +109,7 @@ Utilisez l’une des procédures suivantes pour définir la fonctionnalité Open
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Si vous ne disposez pas des autorisations, contactez votre administrateur d’installation ou votre administrateur SQL Server afin de les demander. Pour plus d’informations sur les autorisations Windows PowerShell, voir <a href="use-windows-powershell-to-administer-sharepoint-2013.md">Permissions</a> et <a href="https://technet.microsoft.com/fr-fr/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
+    <td>Si vous ne disposez pas des autorisations, contactez votre administrateur d’installation ou votre administrateur SQL Server afin de les demander. Pour plus d’informations sur les autorisations Windows PowerShell, voir <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</a> et <a href="https://technet.microsoft.com/fr-fr/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
     </tr>
     </tbody>
     </table>
@@ -195,7 +195,7 @@ Utilisez l’une des procédures suivantes pour définir la fonctionnalité Open
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Si vous ne disposez pas des autorisations, contactez votre administrateur d’installation ou votre administrateur SQL Server afin de les demander. Pour plus d’informations sur les autorisations Windows PowerShell, voir <a href="use-windows-powershell-to-administer-sharepoint-2013.md">Permissions</a> et <a href="https://technet.microsoft.com/fr-fr/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
+    <td>Si vous ne disposez pas des autorisations, contactez votre administrateur d’installation ou votre administrateur SQL Server afin de les demander. Pour plus d’informations sur les autorisations Windows PowerShell, voir <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</a> et <a href="https://technet.microsoft.com/fr-fr/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
     </tr>
     </tbody>
     </table>
@@ -234,11 +234,11 @@ Utilisez l’une des procédures suivantes pour définir la fonctionnalité Open
 ## Voir aussi
 
 
-[Get-SPWOPIBinding](get-spwopibinding.md)  
+[Get-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps)  
 
 
 [Feuille de route de contenu pour Office Web Apps](content-roadmap-for-office-web-apps-server.md)  
-[Utiliser Windows PowerShell pour administrer SharePoint 2013](use-windows-powershell-to-administer-sharepoint-2013.md)  
+[Utiliser Windows PowerShell pour administrer SharePoint 2013](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps)  
 [Office Web Apps Server](office-web-apps-server.md)  
 
 
