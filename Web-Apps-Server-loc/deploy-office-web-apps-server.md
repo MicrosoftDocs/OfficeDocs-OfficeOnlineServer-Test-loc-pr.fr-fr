@@ -277,6 +277,7 @@ Si Office Web Apps Server fonctionne comme prévu, vous devriez voir apparaître
 La batterie de serveurs est désormais prête à distribuer la fonctionnalité Office Web Apps aux hôtes via HTTP. Pour plus d’informations sur la configuration des hôtes, consultez la rubrique [Configurer Office Web Apps pour SharePoint 2013](configure-office-web-apps-for-sharepoint-2013.md).
 
 ## Déploiement d’une batterie Office Web Apps Server à serveur unique qui utilise le protocole HTTPS
+<a name="singlehttps"> </a>
 
 Pour la plupart des environnements de production, nous recommandons vivement l’utilisation de HTTPS pour ses fonctionnalités de sécurité. HTTPS est également nécessaire si vous voulez fournir la fonctionnalité Office Web Apps Server à Lync Server 2013, ce qui permet aux utilisateurs d’afficher des diffusions PowerPoint dans un navigateur. Voici comment installer une batterie Office Web Apps Server à serveur unique qui utilise le protocole HTTPS. Vous devez installer un certificat sur le serveur, comme indiqué dans [Sécurisation des communications Office Web Apps Server à l'aide du protocole HTTPS](plan-office-web-apps-server.md).
 
@@ -350,6 +351,7 @@ La batterie de serveurs est maintenant prête à distribuer la fonctionnalité O
   - [Déploiement d’Office Web Apps Server et de Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
 ## Déploiement d’une batterie Office Web Apps Server multiserveur à charge équilibrée qui utilise le protocole HTTPS
+<a name="multihttps"> </a>
 
 Si vous prévoyez un trafic important vers votre batterie de serveurs Office Web Apps Server, et si vous voulez que celle-ci soit disponible via Internet et sur votre réseau interne, ce type de topologie est idéal. Cette section vous montre comment installer une batterie Office Web Apps Server multiserveur qui utilise un programme d’équilibrage de charge et le protocole HTTPS. Si vous êtes intéressé, [apprenez-en plus sur la topologie](plan-office-web-apps-server.md).
 

@@ -133,7 +133,7 @@ Si cette étape échoue, consultez Résolution des erreurs dans Office Web Apps.
 
 ## Dans un environnement de production qui utilise le protocole HTTPS
 
-Avant d’entamer les procédures suivantes, assurez-vous d’avoir configuré Office Web Apps Server en effectuant les étapes décrites dans la section [Déploiement d'une batterie Office Web Apps Server à serveur unique qui utilise le protocole HTTPS](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#singlehttps) ou [Déployer une batterie Office Web Apps Server multiserveur à charge équilibrée qui utilise le protocole HTTPS](e4d51dc4-6460-437d-aa8e-0ae4d3aa8cc5\(office.15\)#multihttps).
+Avant d’entamer les procédures suivantes, assurez-vous d’avoir configuré Office Web Apps Server en effectuant les étapes décrites dans la section [Déploiement d'une batterie Office Web Apps Server à serveur unique qui utilise le protocole HTTPS](deploy-office-web-apps-server.md#singlehttps) ou [Déployer une batterie Office Web Apps Server multiserveur à charge équilibrée qui utilise le protocole HTTPS](deploy-office-web-apps-server.md#multihttps).
 
 ## Étape 1 : ouvrir SharePoint 2013 Management Shell
 
