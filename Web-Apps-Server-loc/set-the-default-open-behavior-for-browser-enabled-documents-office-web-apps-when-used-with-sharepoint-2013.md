@@ -1,5 +1,5 @@
 ﻿---
-title: Configuration du comportement d’ouverture par défaut des documents activés pour le navigateur (Office Web Apps dans le cadre d’une utilisation avec SharePoint 2013)
+title: Comportement d’ouverture par défaut des documents (Office Web Apps)
 TOCTitle: Configuration du comportement d’ouverture par défaut des documents activés pour le navigateur
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
 ms:mtpsurl: https://technet.microsoft.com/fr-fr/library/Ee837425(v=office.15)
