@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Sapplique à :** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-16_
+_**Dernière rubrique modifiée :** 2016-12-16_
 
 **Résumé :** décrit comment configurer le comportement d'ouverture par défaut pour les documents Office dans les collections de sites et bibliothèques de documents SharePoint.
 
@@ -138,24 +138,33 @@ Utilisez l’une des procédures suivantes pour définir la fonctionnalité Open
 3.  À l'invite de commandes Windows PowerShell, tapez l'une des commandes suivantes :
     
       - Pour activer la fonctionnalité OpenInClient pour une collection de sites spécifique (pour ouvrir les documents dans l’application cliente), entrez la commande suivante :
-        
+
+      ```PowerShell  
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
-        
+      ```
+      ```  
         où *\<SiteCollURL\>* correspond à l’URL de la collection de sites.
+      ```
     
       - Pour activer la fonctionnalité OpenInClient pour toutes les collections de sites (pour ouvrir les documents dans l’application cliente), entrez la commande suivante :
-        
+
+      ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
+      ```
     
       - Pour désactiver la fonctionnalité OpenInClient pour une collection de sites spécifique (pour ouvrir les documents dans le navigateur), entrez la commande suivante :
-        
+
+      ```PowerShell  
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
+      ```
         
         où *\<SiteCollURL\>* correspond à l’URL de la collection de sites.
     
       - Pour désactiver la fonctionnalité OpenInClient pour toutes les collections de sites (pour ouvrir les documents dans le navigateur), entrez la commande suivante :
-        
+
+      ```PowerShell  
             Get-SPSite -limit ALL |foreach{ Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url $_.URL }
+      ```
 
  **Définir le comportement d’ouverture par défaut pour une bibliothèque de documents à l’aide de la page de paramètres de la bibliothèque de documents**
 
@@ -223,7 +232,9 @@ Utilisez l’une des procédures suivantes pour définir la fonctionnalité Open
 
 3.  À l’invite de commandes Windows PowerShell, entrez la commande suivante :
     
+      ```PowerShell
         Get-SPWeb -site <SiteCollURL> | % {$_.Lists} | where {$_.IrmEnabled -eq $true} | % {$_.DefaultItemOpen =[Microsoft.Sharepoint.DefaultItemOpen]::<DefaultItemOpenSetting>; $_.Update()}
+      ```
     
     où :
     

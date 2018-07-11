@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Sapplique à :** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-16_
+_**Dernière rubrique modifiée :** 2016-12-16_
 
 **Résumé** : découvrez comment configurer SharePoint 2013 pour utiliser Office Web Apps.
 
@@ -79,7 +79,9 @@ Choisissez la procédure qui correspond à votre système d’exploitation serve
 
 Exécutez la commande suivante où \<WacServerName\> désigne le nom de domaine complet (FQDN) de l’URL que vous avez définie pour l’URL interne. Il s’agit du point d’entrée du trafic Office Web Apps Server. Pour cet environnement de test, vous devez spécifier le paramètre –AllowHTTP pour autoriser SharePoint 2013 à recevoir des informations de découverte de la batterie Office Web Apps Server à l’aide du protocole HTTP. Si vous ne spécifiez pas le paramètre –AllowHTTP, SharePoint 2013 essaiera d’utiliser le protocole HTTPS avec la batterie Office Web Apps Server et cette commande ne fonctionnera pas.
 
+```PowerShell
     New-SPWOPIBinding -ServerName <WacServerName> -AllowHTTP
+```
 
 Après avoir exécuté cette commande, vous devez voir une liste de liaisons s’afficher à l’invite de commandes Windows PowerShell.
 
@@ -89,7 +91,9 @@ Vous avez besoin d’aide ? Consultez [New-SPWOPIBinding](https://docs.microsof
 
 Office Web Apps Server utilise des zones pour déterminer l’URL (interne ou externe) et le protocole (HTTP ou HTTPS) à utiliser au moment de communiquer avec l’hôte, soit SharePoint 2013 dans le cas présent. Par défaut, SharePoint Server 2013 utilise la zone **internal-https**. Vérifiez qu’il s’agit de la zone actuelle en exécutant la commande suivante :
 
+```PowerShell
     Get-SPWOPIZone
+```
 
 La zone WOPI affichée par cette commande doit être **internal-http**. Si elle s’affiche correctement, passez à l’étape 5. Dans le cas contraire, reportez-vous à l’étape suivante.
 
@@ -99,7 +103,9 @@ Vous avez besoin d’aide ? Voir [Get-SPWOPIZone](https://docs.microsoft.com/en
 
 Si le résultat de l’étape 3 était **internal-https**, exécutez la commande suivante pour redéfinir la zone en **internal-http**. Ce changement est obligatoire car la zone SharePoint 2013 doit correspondre à la zone de la batterie Office Web Apps Server.
 
+```PowerShell
     Set-SPWOPIZone -zone "internal-http"
+```
 
 Vérifiez que la nouvelle zone est **internal-http** en exécutant **Get-SPWOPIZone** à nouveau.
 
@@ -109,23 +115,25 @@ Vous avez besoin d’aide ? Voir [Set-SPWOPIZone](https://docs.microsoft.com/en
 
 Pour utiliser Office Web Apps avec SharePoint 2013 sur HTTP dans un environnement de test, vous devez définir le paramètre AllowOAuthOverHttp sur **True** sans quoi Office Web Apps ne fonctionnera pas. Vous pouvez vérifier l’état actuel en appliquant l’exemple suivant.
 
+```PowerShell
     (Get-SPSecurityTokenServiceConfig).AllowOAuthOverHttp
+```
 
 Si cette commande renvoie la valeur **False**, exécutez les commandes suivantes pour la définir sur **True**.
 
-```
+```PowerShell
     $config = (Get-SPSecurityTokenServiceConfig)
-```
-```
+
     $config.AllowOAuthOverHttp = $true
-```
-```
+
     $config.Update()
 ```
 
 Exécutez de nouveau la commande suivante pour vérifier que le paramètre AllowOAuthOverHttp est à présent défini sur **True**.
 
+```PowerShell
     (Get-SPSecurityTokenServiceConfig).AllowOAuthOverHttp
+```
 
 Vous avez besoin d’aide ? Consultez [Get-SPSecurityTokenServiceConfig](https://technet.microsoft.com/fr-fr/library/ff607642\(v=office.15\)).
 
@@ -161,7 +169,9 @@ Choisissez la procédure qui correspond à votre système d’exploitation serve
 
 Exécutez la commande suivante où \<WacServerName\> désigne le nom de domaine complet (FQDN) de l’URL que vous avez définie pour l’URL interne. Il s’agit du point d’entrée du trafic Office Web Apps Server.
 
+```PowerShell
     New-SPWOPIBinding -ServerName <WacServerName> 
+```
 
 Vous avez besoin d’aide ? Consultez [New-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/New-SPWOPIBinding?view=sharepoint-ps).
 
@@ -169,7 +179,9 @@ Vous avez besoin d’aide ? Consultez [New-SPWOPIBinding](https://docs.microsof
 
 Office Web Apps Server utilise des zones pour déterminer l’URL (interne ou externe) et le protocole (HTTP ou HTTPS) à utiliser au moment de communiquer avec l’hôte, soitSharePoint 2013 dans le cas présent. Par défaut, SharePoint Server 2013 utilise la zone **internal-https**. Vérifiez qu’il s’agit de la zone actuelle en exécutant la commande suivante.
 
+```PowerShell
     Get-SPWOPIZone
+```
 
 Prenez note de la zone WOPI qui s’affiche.
 
@@ -181,7 +193,9 @@ En fonction de votre environnement, vous devrez peut-être modifier la zone WOP
 
 Si les résultats de l’étape 3 affichent **internal-https** et que la batterie de serveurs SharePoint est uniquement interne, vous pouvez passer outre cette étape. Si vous avez une batterie de serveurs SharePoint interne et externe à la fois, vous devez exécuter la commande suivante pour modifier la zone et la redéfinir en **external-https**.
 
+```PowerShell
     Set-SPWOPIZone -zone "external-https"
+```
 
 Vous avez besoin d’aide ? Consultez [Set-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIZone?view=sharepoint-ps).
 
@@ -213,7 +227,9 @@ Pour fonctionner correctement avec l’application web, le fournisseur d’auth
 
 Pour cela, exécutez la commande suivante dans SharePoint Server :
 
+```PowerShell
     Get-SPWopiZone 
+```
 
 Le résultat sera l’une des valeurs suivantes :
 
@@ -227,7 +243,9 @@ Le résultat sera l’une des valeurs suivantes :
 
 Exécutez ensuite la commande suivante dans SharePoint Server.
 
+```PowerShell
     Get-SPWOPIBinding
+```
 
 Dans la sortie, recherchez **WopiZone : *zone***. Si les résultats de Get-SPWopiZone ne correspondent pas à la zone renvoyée par Get-SPWOPIBinding, exécutez la cmdlet **Set-SPWOPIZone -Zone** dans SharePoint Server pour modifier la zone WOPI afin qu’elle corresponde au résultat de Get-SPWOPIBinding. Pour obtenir de l’aide sur l’utilisation de ces cmdlets, voir [Get-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIBinding?view=sharepoint-ps), [Set-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Set-SPWOPIBinding?view=sharepoint-ps) et [Get-SPWOPIZone](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Get-SPWOPIZone?view=sharepoint-ps).
 
@@ -287,7 +305,9 @@ Pour permettre aux utilisateurs d’interagir avec les classeurs contenant un mo
 
 Si, pour une raison quelconque, vous cherchez à déconnecter SharePoint 2013 d’Office Web Apps Server, utilisez l’exemple de commande suivant.
 
+```PowerShell
     Remove-SPWOPIBinding -All:$true
+```
 
 Vous avez besoin d’aide ? Consultez [Remove-SPWOPIBinding](https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/Remove-SPWOPIBinding?view=sharepoint-ps).
 
