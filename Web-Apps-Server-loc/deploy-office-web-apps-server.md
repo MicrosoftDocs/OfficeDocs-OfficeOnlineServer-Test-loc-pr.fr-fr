@@ -9,13 +9,11 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Déployer Office Web Apps Server
+# Déployer Office Web Apps Server 
 
- 
+_**Sapplique à :** Office Web Apps Server_
 
-_**Sapplique à :**Office Web Apps Server_
-
-_**Dernière rubrique modifiée :**2017-10-05_
+_**Dernière rubrique modifiée :** 2017-10-05_
 
 **Résumé** : Explique comment déployer Office Web Apps Server en local afin de l’utiliser avec SharePoint 2013 et Lync Server 2013.
 
@@ -93,11 +91,15 @@ La configuration requise pour Windows Server 2008 R2, Windows Server 2012 et 
 
 2.  Ouvrez l’invite Windows PowerShell en tant qu’administrateur et exécutez ces commandes pour installer les rôles et les services requis.
     
+    ```PowerShell
         Import-Module ServerManager
+    ```
     
     Ensuite, exécutez la commande suivante :
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-WebServer,Web-Common-Http,Web-Static-Content,Web-App-Dev,Web-Asp-Net,Web-Net-Ext,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,Web-Security,Web-Windows-Auth,Web-Filtering,Web-Stat-Compression,Web-Dyn-Compression,Web-Mgmt-Console,Ink-Handwriting,IH-Ink-Support,NET-Framework,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-Win-CFAC
+    ```
     
     Si vous y êtes invité, redémarrez le serveur.
 
@@ -105,7 +107,9 @@ La configuration requise pour Windows Server 2008 R2, Windows Server 2012 et 
 
 1.  Ouvrez l’invite Windows PowerShell en tant qu’administrateur et exécutez cette commande pour installer les rôles et les services requis.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     Si vous y êtes invité, redémarrez le serveur.
 
@@ -117,7 +121,9 @@ La configuration requise pour Windows Server 2008 R2, Windows Server 2012 et 
 
 2.  Ouvrez l’invite Windows PowerShell en tant qu’administrateur et exécutez cette commande pour installer les rôles et les services requis.
     
+    ```PowerShell
         Add-WindowsFeature Web-Server,Web-Mgmt-Tools,Web-Mgmt-Console,Web-WebServer,Web-Common-Http,Web-Default-Doc,Web-Static-Content,Web-Performance,Web-Stat-Compression,Web-Dyn-Compression,Web-Security,Web-Filtering,Web-Windows-Auth,Web-App-Dev,Web-Net-Ext45,Web-Asp-Net45,Web-ISAPI-Ext,Web-ISAPI-Filter,Web-Includes,InkandHandwritingServices,NET-Framework-Features,NET-Framework-Core,NET-HTTP-Activation,NET-Non-HTTP-Activ,NET-WCF-HTTP-Activation45
+    ```
     
     Si vous y êtes invité, redémarrez le serveur.
 
@@ -241,7 +247,9 @@ Vous pouvez utiliser cette batterie Office Web Apps Server pour distribuer la fo
 
 Utilisez la commande **New-OfficeWebAppsFarm** pour créer une batterie de serveurs Office Web Apps Server qui comporte un serveur unique, comme indiqué dans l’exemple ci-dessous.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalURL "http://servername" -AllowHttp -EditingEnabled
+```
 
 **Paramètres**
 
@@ -263,6 +271,7 @@ Une fois la batterie créée, des détails la concernant s’affichent dans l’
 
 Si Office Web Apps Server fonctionne comme prévu, vous devriez voir apparaître un fichier XML de découverte WOPI dans votre navigateur web. Les premières lignes de ce fichier doivent se présenter comme dans l’exemple suivant.
 
+```xml
     <?xml version="1.0" encoding="utf-8" ?> 
     - <wopi-discovery>
     - <net-zone name="internal-http">
@@ -271,6 +280,7 @@ Si Office Web Apps Server fonctionne comme prévu, vous devriez voir apparaître
     <action name="view" ext="xls" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsb" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
     <action name="view" ext="xlsm" default="true" urlsrc="http://servername/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" /> 
+```
 
 ## Étape 3 : configurer l’hôte
 
@@ -291,7 +301,9 @@ Cette batterie de serveurs Office Web Apps Server fournira la fonctionnalité Of
 
 Utilisez la commande **New-OfficeWebAppsFarm** pour créer une batterie de serveurs Office Web Apps Server qui comporte un serveur unique, comme indiqué dans l’exemple ci-dessous.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -CertificateName "OfficeWebApps Certificate" -EditingEnabled
+```
 
 **Paramètres**
 
@@ -311,11 +323,13 @@ En cas d'affichage des messages « Exceptions de service web (500) » ou « Erre
 
 Une fois la batterie créée, des détails la concernant s’affichent dans l’invite Windows PowerShell. Pour vérifier qu’Office Web Apps Server est installé et configuré correctement, utilisez un navigateur web pour accéder à l’URL de découverte Office Web Apps Server comme le montre l’exemple suivant. L’URL de découverte correspond au paramètre *InternalUrl* que vous avez indiqué lors de la configuration de votre batterie Office Web Apps Server, suivi de **/hosting/discovery**, par exemple :
 
+```
     https://server.contoso.com/hosting/discovery
+```
 
 Si Office Web Apps Server fonctionne comme prévu, vous devriez voir apparaître un fichier XML de découverte WOPI dans votre navigateur web. Les premières lignes de ce fichier doivent se présenter comme dans l’exemple suivant.
 
-``` 
+```XML 
 <?xml version="1.0" encoding="UTF-8"?>
 <wopi-discovery><net-zone 
 name="internal-https"><app name="Excel" checkLicense="true" 
@@ -324,8 +338,7 @@ name="view"
 urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
 default="true" ext="ods"/><action name="view" 
 urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" 
-default="true" ext="xls"/><action name="view"
- 
+default="true" ext="xls"/><action name="view" 
 ```
 
 <table>
@@ -365,7 +378,9 @@ Avant de commencer, assurez-vous que le programme d’équilibrage de charge est
 
 Utilisez la commande **New-OfficeWebAppsFarm** pour créer une batterie de serveurs Office Web Apps Server sur le premier serveur, comme indiqué dans l’exemple suivant.
 
+```PowerShell
     New-OfficeWebAppsFarm -InternalUrl "https://server.contoso.com" -ExternalUrl "https://wacweb01.contoso.com" -SSLOffloaded -EditingEnabled
+```
 
 **Paramètres**
 
@@ -385,7 +400,9 @@ En cas d'affichage des messages « Exceptions de service web (500) » ou « Erre
 
 Une fois que le premier serveur exécute Office Web Apps Server, exécutez la commande **New-OfficeWebAppsMachine** sur chaque serveur que vous voulez ajouter à la batterie de serveurs Office Web Apps Server. Pour le paramètre **–MachineToJoin**, utilisez le nom d’ordinateur d’un serveur qui se trouve déjà dans la batterie de serveurs Office Web Apps Server. Par exemple, si server1.contoso.com est déjà dans la batterie de serveurs, utilisez les éléments suivants :
 
+```PowerShell
     New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+```
 
 Vous souhaitez plus d’informations sur ces paramètres ? Vous en trouverez dans la rubrique [New-OfficeWebAppsMachine](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsmachine?view=officewebapps-ps).
 
@@ -397,8 +414,10 @@ Une fois la batterie créée, des détails la concernant s’affichent dans l’
 
 Si Office Web Apps Server fonctionne comme prévu, vous devriez voir apparaître un fichier XML de découverte WOPI dans votre navigateur web. Les premières lignes de ce fichier doivent se présenter comme dans l’exemple suivant.
 
+```XML
     <?xml version="1.0" encoding="UTF-8"?>
     <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
+```
 
 <table>
 <thead>
@@ -428,16 +447,16 @@ Si des fonctionnalités de .NET Framework 3.5 ont été installées puis suppri
 
 **Pour Windows Server 2008 R2**
 
-```
+```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
-```
-```
+
     iisreset /restart /noforce
 ```
-
 **Pour Windows Server 2012 ou Windows Server 2012 R2**
 
+```PowerShell
     dism /online /enable-feature /featurename:IIS-ASPNET45
+```
 
 ## Voir aussi
 
