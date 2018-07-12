@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>Sapplique à :</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-16_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
 **Résumé** : fournit des informations sur Office Web Apps, Office Web Apps Server et leur fonctionnement en local avec SharePoint 2013.
 

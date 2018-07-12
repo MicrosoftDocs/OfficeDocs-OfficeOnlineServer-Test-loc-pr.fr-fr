@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps, Office Web Apps Server_
+_<strong>Sapplique à :</strong>Office Web Apps, Office Web Apps Server_
 
-_**Dernière rubrique modifiée :**2016-12-16_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
 **Résumé** : Fournit un guide vers les articles, les téléchargements et d’autres ressources qui aideront les professionnels de l’informatique à déployer et à gérer Office Web Apps Server.
 

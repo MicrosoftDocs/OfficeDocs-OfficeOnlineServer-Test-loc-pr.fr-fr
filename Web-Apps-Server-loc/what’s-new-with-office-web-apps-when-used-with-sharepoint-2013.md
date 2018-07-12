@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>Sapplique à :</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-16_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
 **Résumé** : décrit les nouvelles fonctionnalités dont disposent les utilisateurs et les administrateurs SharePoint 2013 lors de l’utilisation d’Office Web Apps.
 

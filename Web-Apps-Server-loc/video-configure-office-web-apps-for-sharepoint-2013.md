@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>Sapplique à :</strong>Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-16_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
 **Résumé** : vous guide tout au long des neuf étapes principales à suivre pour configurer une batterie de serveurs Office Web Apps Server afin que celle-ci fonctionne avec SharePoint 2013.
 

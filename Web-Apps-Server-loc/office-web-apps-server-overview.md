@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps Server_
+_<strong>Sapplique à :</strong>Office Web Apps Server_
 
-_**Dernière rubrique modifiée :**2017-05-26_
+_<strong>Dernière rubrique modifiée :</strong>2017-05-26_
 
 **Résumé :** découvrez Office Web Apps Server et sa fonctionnalité Office dans un navigateur pour les hôtes pris en charge.
 
