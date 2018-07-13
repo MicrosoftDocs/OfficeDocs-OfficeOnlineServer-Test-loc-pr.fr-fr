@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps, Office Web Apps Server_
+_**Sapplique à :** Office Web Apps, Office Web Apps Server_
 
-_**Dernière rubrique modifiée :**2016-12-16_
+_**Dernière rubrique modifiée :** 2016-12-16_
 
 **Résumé** : Fournit un guide vers les articles, les téléchargements et d’autres ressources qui aideront les professionnels de l’informatique à déployer et à gérer Office Web Apps Server.
 
@@ -27,19 +27,9 @@ Office Web Apps Server est un nouveau produit serveur Office qui fournit des ver
 
 Si vous êtes un professionnel de l’informatique et que vous recherchez des informations sur Outlook Web App, voir [Nouveautés Outlook Web App dans Exchange 2013](http://go.microsoft.com/fwlink/?linkid=282325).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Ff431682.important(Office.15).gif" title="Important" alt="Important" /><strong>Important :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cet article s’adresse aux administrateurs qui déploient et gèrent Office Web Apps Server pour leurs organisations.<br />
-<strong>Avez-vous besoin d’aide pour utiliser Office Web Apps sur votre périphérique mobile ou votre ordinateur de bureau ?</strong> Voir <a href="http://go.microsoft.com/fwlink/p/?linkid=269811">Prise en main d’Office Web Apps</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Cet article s’adresse aux administrateurs qui déploient et gèrent Office Web Apps Server pour leurs organisations.<br />
+<strong>Avez-vous besoin d’aide pour utiliser Office Web Apps sur votre périphérique mobile ou votre ordinateur de bureau ?</strong> Voir <a href="http://go.microsoft.com/fwlink/p/?linkid=269811">Prise en main d’Office Web Apps</a>.
 
 
 Le tableau ci-dessous décrit les ressources dont disposent les professionnels de l’informatique qui déploient et gèrent Office Web Apps Server.

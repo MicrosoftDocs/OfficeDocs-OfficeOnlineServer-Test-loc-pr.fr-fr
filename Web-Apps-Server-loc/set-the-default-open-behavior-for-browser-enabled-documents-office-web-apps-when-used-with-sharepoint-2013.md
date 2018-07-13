@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Sapplique à :**  Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Dernière rubrique modifiée :** 2016-12-16_
+_**Dernière rubrique modifiée :**  2016-12-16_
 
 **Résumé :** décrit comment configurer le comportement d'ouverture par défaut pour les documents Office dans les collections de sites et bibliothèques de documents SharePoint.
 
@@ -33,50 +33,19 @@ Par défaut, une fois SharePoint 2013 configuré pour utiliser Office Web Apps S
 
 En général, la fonctionnalité OpenInClient remplace les liaisons WOPI que vous avez définies entre SharePoint 2013 et Office Web Apps Server. Autrement dit, si la fonctionnalité OpenInClient d’une bibliothèque ou d’une collection de sites SharePoint 2013 est activée, les documents s’ouvrent dans l’application cliente, même si le serveur SharePoint 2013 est configuré pour utiliser Office Web Apps Server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>La configuration du comportement d’ouverture par défaut des documents activés pour le navigateur n’aura pas d’incidence sur la possibilité pour les utilisateurs de se servir des fonctionnalités <strong>Extraire</strong> et <strong>Envoyer à</strong> de SharePoint 2013 pour télécharger des documents. Pour plus d’informations sur la configuration de l’extraction, le téléchargement et l’affichage des autorisations dans SharePoint 2013, voir <a href="https://technet.microsoft.com/fr-fr/library/cc262939(v=office.15)">Planification des autorisations pour les sites et le contenu dans SharePoint 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> La configuration du comportement d’ouverture par défaut des documents activés pour le navigateur n’aura pas d’incidence sur la possibilité pour les utilisateurs de se servir des fonctionnalités <strong>Extraire</strong> et <strong>Envoyer à</strong> de SharePoint 2013 pour télécharger des documents. Pour plus d’informations sur la configuration de l’extraction, le téléchargement et l’affichage des autorisations dans SharePoint 2013, voir <a href="https://technet.microsoft.com/fr-fr/library/cc262939(v=office.15)">Planification des autorisations pour les sites et le contenu dans SharePoint 2013</a>.
 
 
 ## Définir la fonctionnalité OpenInClient pour une collection de sites ou une bibliothèque de documents
 
 Utilisez l’une des procédures suivantes pour définir la fonctionnalité OpenInClient dans SharePoint 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Certaines de ces procédures utilisent SharePoint 2013 Management Shell pour exécuter les cmdlets SharePoint. Si vous utilisez la console Windows PowerShell, vous devez ajouter le composant logiciel enfichable Microsoft.SharePoint.PowerShell à l’aide de la cmdlet <strong>Add-PSSnapin</strong>. Pour plus d’informations sur l’utilisation de Windows PowerShell avec SharePoint 2013, voir <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Utiliser Windows PowerShell pour administrer SharePoint 2013</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Certaines de ces procédures utilisent SharePoint 2013 Management Shell pour exécuter les cmdlets SharePoint. Si vous utilisez la console Windows PowerShell, vous devez ajouter le composant logiciel enfichable Microsoft.SharePoint.PowerShell à l’aide de la cmdlet <strong>Add-PSSnapin</strong>. Pour plus d’informations sur l’utilisation de Windows PowerShell avec SharePoint 2013, voir <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Utiliser Windows PowerShell pour administrer SharePoint 2013</a>.
 
-
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez exécuter des tâches dans suites Office 2013 au moyen d’une souris, de raccourcis clavier ou d’entrées tactiles. Pour plus d’informations sur l’utilisation des raccourcis clavier et des entrées tactiles avec les produits et services Office, voir <a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Raccourcis clavier</a> et <a href="http://go.microsoft.com/fwlink/p/?linkid=253163">Guide des fonctions tactiles dans Office</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez exécuter des tâches dans suites Office 2013 au moyen d’une souris, de raccourcis clavier ou d’entrées tactiles. Pour plus d’informations sur l’utilisation des raccourcis clavier et des entrées tactiles avec les produits et services Office, voir <a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Raccourcis clavier</a> et <a href="http://go.microsoft.com/fwlink/p/?linkid=253163">Guide des fonctions tactiles dans Office</a>.
 
 
  **Définir la fonctionnalité OpenInClient pour les collections de sites**
@@ -101,18 +70,8 @@ Utilisez l’une des procédures suivantes pour définir la fonctionnalité Open
     
     Un administrateur peut utiliser la cmdlet **Add-SPShellAdmin** pour accorder des autorisations d'utilisation des cmdlets des SharePoint 2013..
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous ne disposez pas des autorisations, contactez votre administrateur d’installation ou votre administrateur SQL Server afin de les demander. Pour plus d’informations sur les autorisations Windows PowerShell, voir <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</a> et <a href="https://technet.microsoft.com/fr-fr/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Si vous ne disposez pas des autorisations, contactez votre administrateur d’installation ou votre administrateur SQL Server afin de les demander. Pour plus d’informations sur les autorisations Windows PowerShell, voir <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</a> et <a href="https://technet.microsoft.com/fr-fr/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.
 
 
 2.  Ouvrez SharePoint 2013 Management Shell avec élévation de privilèges :
@@ -196,18 +155,8 @@ Utilisez l’une des procédures suivantes pour définir la fonctionnalité Open
     
     Un administrateur peut utiliser la cmdlet **Add-SPShellAdmin** pour accorder des autorisations d'utilisation des cmdlets des SharePoint 2013..
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous ne disposez pas des autorisations, contactez votre administrateur d’installation ou votre administrateur SQL Server afin de les demander. Pour plus d’informations sur les autorisations Windows PowerShell, voir <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</a> et <a href="https://technet.microsoft.com/fr-fr/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Si vous ne disposez pas des autorisations, contactez votre administrateur d’installation ou votre administrateur SQL Server afin de les demander. Pour plus d’informations sur les autorisations Windows PowerShell, voir <a href="https://docs.microsoft.com/en-us/powershell/module/sharepoint-server/?view=sharepoint-ps">Permissions</a> et <a href="https://technet.microsoft.com/fr-fr/library/ff607596(v=office.15)">Add-SPShellAdmin</a>.
 
 
 2.  Ouvrez SharePoint 2013 Management Shell avec élévation de privilèges :

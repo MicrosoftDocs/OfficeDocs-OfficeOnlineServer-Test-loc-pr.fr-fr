@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Sapplique à :**  Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Dernière rubrique modifiée :** 2016-12-16_
+_**Dernière rubrique modifiée :**  2016-12-16_
 
 **Résumé** : découvrez comment configurer SharePoint 2013 pour utiliser Office Web Apps.
 
