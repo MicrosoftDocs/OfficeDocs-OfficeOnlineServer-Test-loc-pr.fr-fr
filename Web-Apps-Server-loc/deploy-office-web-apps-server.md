@@ -11,9 +11,10 @@ ms.translationtype: HT
 
 # Déployer Office Web Apps Server 
 
-_**Sapplique à :**  Office Web Apps Server_
+_<strong>Sapplique à :</strong>Office Web Apps Server_
 
-_**Dernière rubrique modifiée :**  2017-10-05_
+_<strong>Dernière rubrique modifiée :</strong>2017-10-05_
+
 
 **Résumé** : Explique comment déployer Office Web Apps Server en local afin de l’utiliser avec SharePoint 2013 et Lync Server 2013.
 

@@ -13,9 +13,10 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :** Office Web Apps Server_
+_<strong>Sapplique à :</strong>Office Web Apps Server_
 
-_**Dernière rubrique modifiée :** 2016-12-16_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-16_
+
 
 **Résumé :** contient des articles relatifs à Office Web Apps Server et la manière dont il distribue la fonctionnalité Office Web Apps aux hôtes.
 

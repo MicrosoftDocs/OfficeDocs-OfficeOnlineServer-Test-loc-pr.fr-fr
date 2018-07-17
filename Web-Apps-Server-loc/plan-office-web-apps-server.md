@@ -13,9 +13,10 @@ ms.translationtype: MT
 
  
 
-_**Sapplique à :** Office Web Apps Server_
+_<strong>Sapplique à :</strong>Office Web Apps Server_
 
-_**Dernière rubrique modifiée :** 2017-10-10_
+_<strong>Dernière rubrique modifiée :</strong>2017-10-10_
+
 
 **Résumé** : Découvrez la configuration requise d’Office Web Apps Server, telle que le protocole HTTPS, les certificats, la virtualisation, l’équilibrage de la charge, les topologies et la sécurité.
 

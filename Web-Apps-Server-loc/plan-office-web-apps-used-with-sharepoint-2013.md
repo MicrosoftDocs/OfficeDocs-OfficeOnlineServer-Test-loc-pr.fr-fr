@@ -11,11 +11,9 @@ ms.translationtype: HT
 
 # Planification d'Office Web Apps (utilisé avec SharePoint 2013)
 
- 
+_<strong>Sapplique à :</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Sapplique à :** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Dernière rubrique modifiée :** 2016-12-16_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
 **Résumé :** passez en revue les recommandations pour la planification d'Office Web Apps lorsque vous l'utilisez localement avec SharePoint 2013.
 

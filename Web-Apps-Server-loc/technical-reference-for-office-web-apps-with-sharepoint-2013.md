@@ -11,11 +11,10 @@ ms.translationtype: HT
 
 # Référence technique pour Office Web Apps (avec SharePoint 2013)
 
- 
 
-_**Sapplique à :** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_<strong>Sapplique à :</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Dernière rubrique modifiée :** 2016-12-16_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
 **Résumé :** Trouvez des articles de références techniques, comme par exemple de l'aide pour les cmdlets Windows PowerShell SPWOPI pour Office Web Apps.
 
