@@ -375,9 +375,12 @@ Si des fonctionnalités de .NET Framework 3.5 ont été installées puis suppri
 
 ```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
+```
 
+```PowerShell
     iisreset /restart /noforce
 ```
+
 **Pour Windows Server 2012 ou Windows Server 2012 R2**
 
 ```PowerShell
