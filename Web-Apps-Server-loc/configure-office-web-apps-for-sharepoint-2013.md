@@ -17,6 +17,7 @@ _<strong>Sapplique à :</strong>Office Web Apps, SharePoint Foundation 2013, Sh
 
 _<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
+
 **Résumé** : découvrez comment configurer SharePoint 2013 pour utiliser Office Web Apps.
 
 **Public concerné** : professionnels de l’informatique

@@ -9,9 +9,7 @@ mtps_version: v=office.15
 ms.translationtype: HT
 ---
 
-# Utiliser Office Web Apps avec SharePoint 2013
-
- 
+# Utiliser Office Web Apps avec SharePoint 2013 
 
 _<strong>Sapplique à :</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 

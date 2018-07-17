@@ -11,8 +11,6 @@ ms.translationtype: HT
 
 # Référence technique pour Office Web Apps Server
 
- 
-
 _<strong>Sapplique à :</strong>Office Web Apps Server_
 
 _<strong>Dernière rubrique modifiée :</strong>2016-12-16_

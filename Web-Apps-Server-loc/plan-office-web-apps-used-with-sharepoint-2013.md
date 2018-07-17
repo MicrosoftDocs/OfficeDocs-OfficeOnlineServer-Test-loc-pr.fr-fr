@@ -11,8 +11,6 @@ ms.translationtype: HT
 
 # Planification d'Office Web Apps (utilisé avec SharePoint 2013)
 
- 
-
 _<strong>Sapplique à :</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
 _<strong>Dernière rubrique modifiée :</strong>2016-12-16_
@@ -23,19 +21,9 @@ _<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
 Pour planifier la manière dont Office Web Apps est utilisé localement avec SharePoint 2013, vous devez vérifier la prise en charge des navigateurs, les conditions d'authentification SharePoint et les considérations relatives aux licences pour l'affichage et la modification de fichiers Office dans Office Web Apps. Ensuite, vous pouvez déterminer si vous souhaitez que SharePoint 2013 utilise le navigateur web ou une application cliente quand un utilisateur ouvre des fichiers Office à partir d'une bibliothèque de documents SharePoint 2013.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Ff431682.important(Office.15).gif" title="Important" alt="Important" /><strong>Important :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cet article s’inscrit dans la <a href="content-roadmap-for-office-web-apps-server.md">Feuille de route de contenu pour Office Web Apps</a>. Utilisez cette feuille de route comme point de départ pour accéder à des articles, téléchargements et vidéos qui vous aideront à déployer et à gérer Office Web Apps Server.<br />
-<strong>Vous souhaitez obtenir de l’aide sur Office Web Apps sur les ordinateurs de bureau ou appareils mobiles ?</strong> Pour trouver les informations qui vous intéressent, recherchez « Office Web Apps » sur <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Cet article s’inscrit dans la <a href="content-roadmap-for-office-web-apps-server.md">Feuille de route de contenu pour Office Web Apps</a>. Utilisez cette feuille de route comme point de départ pour accéder à des articles, téléchargements et vidéos qui vous aideront à déployer et à gérer Office Web Apps Server.<br />
+<strong>Vous souhaitez obtenir de l’aide sur Office Web Apps sur les ordinateurs de bureau ou appareils mobiles ?</strong> Pour trouver les informations qui vous intéressent, recherchez « Office Web Apps » sur <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
 
 Contenu de cet article :

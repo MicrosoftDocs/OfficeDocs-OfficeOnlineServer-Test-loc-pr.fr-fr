@@ -11,7 +11,6 @@ ms.translationtype: HT
 
 # Référence technique pour Office Web Apps (avec SharePoint 2013)
 
- 
 
 _<strong>Sapplique à :</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 

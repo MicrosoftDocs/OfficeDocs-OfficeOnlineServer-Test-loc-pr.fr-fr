@@ -17,6 +17,7 @@ _<strong>Sapplique à :</strong>Office Web Apps Server_
 
 _<strong>Dernière rubrique modifiée :</strong>2017-10-10_
 
+
 **Résumé** : Découvrez la configuration requise d’Office Web Apps Server, telle que le protocole HTTPS, les certificats, la virtualisation, l’équilibrage de la charge, les topologies et la sécurité.
 
 **Public concerné** : professionnels de l'informatique
@@ -29,18 +30,8 @@ Il est important de planifier avec soin afin que tous les hôtes, tels que Share
 
   - [Déploiement d’Office Web Apps Server et de Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=256902)
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /> <strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Produits SharePoint 2010 ne peut pas être un hôte pour Office Web Apps Server. Office Web Apps Server n’est pas pris en charge par SharePoint Foundation 2010 ou SharePoint Server 2010. Office Web Apps Server n’est pas également pris en charge par Exchange Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Produits SharePoint 2010 ne peut pas être un hôte pour Office Web Apps Server. Office Web Apps Server n’est pas pris en charge par SharePoint Foundation 2010 ou SharePoint Server 2010. Office Web Apps Server n’est pas également pris en charge par Exchange Server 2013.
 
 
 Contenu de cet article :
@@ -103,18 +94,8 @@ Tout d’abord, voici quelques actions que vous ne devez PAS effectuer lors du d
 
 Maintenant, voici les éléments que vous DEVEZ installer. Pour plus de détails, voir le tableau suivant.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Ff431682.important(Office.15).gif" title="Important" alt="Important" /> <strong>Important :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Office Web Apps Server est uniquement disponible pour téléchargement à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Volume Licensing Service Center de gestion des</a>. Pour télécharger Office Web Apps Server, vous devez posséder une licence, sous contrat de licence en Volume, Office Professionnel Plus 2013, Office Standard 2013 ou Office pour Mac 2011. Le téléchargement se trouve dans Office sur le portail de gestion des produits.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Office Web Apps Server est uniquement disponible pour téléchargement à partir du <a href="https://go.microsoft.com/fwlink/p/?linkid=256561">Volume Licensing Service Center de gestion des</a>. Pour télécharger Office Web Apps Server, vous devez posséder une licence, sous contrat de licence en Volume, Office Professionnel Plus 2013, Office Standard 2013 ou Office pour Mac 2011. Le téléchargement se trouve dans Office sur le portail de gestion des produits.
 
 
 ### Téléchargements, rôles serveur et fonctionnalités obligatoires pour Office Web Apps Server
@@ -384,18 +365,8 @@ Le certificat doit être importé comme suit :
 
   - **Pour les batteries de serveurs à charge équilibrée** : si vous déchargez SSL, vous devez importer le certificat sur le programme d’équilibrage de la charge matérielle. Dans le cas contraire, vous devez installer le certificat sur chaque serveur de la batterie Office Web Apps Server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /> <strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>N'utilisez pas de certificats auto-signés, sauf dans les environnements de test non critiques.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> N'utilisez pas de certificats auto-signés, sauf dans les environnements de test non critiques.
 
 
 Pour plus d’informations sur les certificats, voir [comment obtenir un certificat SSL](https://go.microsoft.com/fwlink/p/?linkid=269700).
@@ -422,18 +393,8 @@ La liste autorisée est une fonctionnalité de sécurité qui empêche les hôte
 
 Vous pouvez ajouter des domaines à la liste autorisée après la création de la batterie Office Web Apps Server. Pour plus d’informations sur l’ajout de domaines à la liste autorisée, voir [New-OfficeWebAppsHost](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappshost?view=officewebapps-ps).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Ff431682.important(Office.15).gif" title="Important" alt="Important" /> <strong>Important :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si vous n’ajoutez pas de domaine à la liste autorisée, Office Web Apps Server autorise les demandes de fichiers aux hôtes de n’importe quel domaine. Ne laissez pas cette liste vide si votre batterie Office Web Apps Server est accessible sur Internet. Sinon, tout le monde pourra utiliser votre batterie Office Web Apps Server pour afficher et modifier du contenu.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Si vous n’ajoutez pas de domaine à la liste autorisée, Office Web Apps Server autorise les demandes de fichiers aux hôtes de n’importe quel domaine. Ne laissez pas cette liste vide si votre batterie Office Web Apps Server est accessible sur Internet. Sinon, tout le monde pourra utiliser votre batterie Office Web Apps Server pour afficher et modifier du contenu.
 
 
 ## Planification des visionneuses en ligne avec Office Web Apps Server

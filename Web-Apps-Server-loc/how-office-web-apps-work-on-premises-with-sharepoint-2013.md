@@ -17,6 +17,7 @@ _<strong>Sapplique à :</strong>Office Web Apps, SharePoint Foundation 2013, Sh
 
 _<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
+
 **Résumé** : fournit des informations sur Office Web Apps, Office Web Apps Server et leur fonctionnement en local avec SharePoint 2013.
 
 **Public concerné** : professionnels de l’informatique

@@ -11,8 +11,6 @@ ms.translationtype: HT
 
 # Vidéo : Configurer Office Web Apps pour SharePoint 2013
 
- 
-
 _<strong>Sapplique à :</strong>Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
 
 _<strong>Dernière rubrique modifiée :</strong>2016-12-16_

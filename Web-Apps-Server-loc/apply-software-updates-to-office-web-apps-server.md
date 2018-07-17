@@ -16,6 +16,8 @@ ms.translationtype: HT
 _<strong>Sapplique à :</strong>Office Web Apps Server_
 
 _<strong>Dernière rubrique modifiée :</strong>2016-12-16_
+=======
+
 
 **Résumé** : explique comment appliquer des mises à jour logicielles dans une batterie de serveurs Office Web Apps Server.
 
@@ -23,34 +25,14 @@ _<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
 Suite à la publication d'une nouvelle version d'Office Web Apps Server, Microsoft met à disposition une série de mises à jour logicielles visant à améliorer la sécurité, les performances et la fiabilité du serveur. Cet article décrit comment appliquer des mises à jour logicielles sur des serveurs individuels dans une batterie de serveurs Office Web Apps Server.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Ff431682.important(Office.15).gif" title="Important" alt="Important" /><strong>Important :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cet article s’inscrit dans la <a href="content-roadmap-for-office-web-apps-server.md">Feuille de route de contenu pour Office Web Apps</a>. Utilisez cette feuille de route comme point de départ pour accéder à des articles, téléchargements et vidéos qui vous aideront à déployer et gérer Office Web Apps Server.<br />
-<strong>Vous souhaitez obtenir de l’aide sur Office Web Apps sur les ordinateurs de bureau ou appareils mobiles ?</strong> Pour trouver les informations qui vous intéressent, recherchez « Office Web Apps » sur <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!IMPORTANT]
+> Cet article s’inscrit dans la <a href="content-roadmap-for-office-web-apps-server.md">Feuille de route de contenu pour Office Web Apps</a>. Utilisez cette feuille de route comme point de départ pour accéder à des articles, téléchargements et vidéos qui vous aideront à déployer et gérer Office Web Apps Server.<br />
+<strong>Vous souhaitez obtenir de l’aide sur Office Web Apps sur les ordinateurs de bureau ou appareils mobiles ?</strong> Pour trouver les informations qui vous intéressent, recherchez « Office Web Apps » sur <a href="http://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ966220.warning(Office.15).gif" title="Avertissement" alt="Avertissement" /><strong>Avertissement :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>L'application de mises à jour Office Web Apps Server à l'aide du processus de mise à jour automatique n'est pas prise en charge avec Office Web Apps Server. Cela est dû au fait que les mises à jour Office Web Apps Server doivent être appliquées d'une certaine manière, comme indiqué dans le présent article. Si des mises à jour Office Web Apps Server sont appliquées automatiquement, les utilisateurs risquent de ne pas pouvoir afficher ou modifier de documents dans Office Web Apps. Si cette situation se produit, vous devrez reconstruire votre batterie Office Web Apps Server. Pour ce faire, vous devez supprimer le serveur Office Web Apps Server de la batterie à l'aide de <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a>, désinstaller Office Web Apps Server dans Ajout/Suppression de programmes, puis réinstaller Office Web Apps Server en suivant la procédure décrite dans la rubrique <a href="deploy-office-web-apps-server.md">Déployer Office Web Apps Server</a>. Après la réinstallation, appliquez la mise à jour en suivant la procédure décrite dans le présent article.<br />
-Il est essentiel de consulter les instructions de la rubrique <a href="plan-office-web-apps-server.md">Planification des mises à jour pour Office Web Apps Server</a> et d'établir un processus de mise à jour pour la batterie Office Web Apps Server.</td>
-</tr>
-</tbody>
-</table>
+> [!WARNING]
+> L'application de mises à jour Office Web Apps Server à l'aide du processus de mise à jour automatique n'est pas prise en charge avec Office Web Apps Server. Cela est dû au fait que les mises à jour Office Web Apps Server doivent être appliquées d'une certaine manière, comme indiqué dans le présent article. Si des mises à jour Office Web Apps Server sont appliquées automatiquement, les utilisateurs risquent de ne pas pouvoir afficher ou modifier de documents dans Office Web Apps. Si cette situation se produit, vous devrez reconstruire votre batterie Office Web Apps Server. Pour ce faire, vous devez supprimer le serveur Office Web Apps Server de la batterie à l'aide de <a href="https://docs.microsoft.com/en-us/powershell/module/officewebapps/remove-officewebappsmachine?view=officewebapps-ps">Remove-OfficeWebAppsMachine</a>, désinstaller Office Web Apps Server dans Ajout/Suppression de programmes, puis réinstaller Office Web Apps Server en suivant la procédure décrite dans la rubrique <a href="deploy-office-web-apps-server.md">Déployer Office Web Apps Server</a>. Après la réinstallation, appliquez la mise à jour en suivant la procédure décrite dans le présent article.<br />
+Il est essentiel de consulter les instructions de la rubrique <a href="plan-office-web-apps-server.md">Planification des mises à jour pour Office Web Apps Server</a> et d'établir un processus de mise à jour pour la batterie Office Web Apps Server.
 
 
 ## Avant de commencer
@@ -61,25 +43,12 @@ Les mises à jour publiées pour Office Web Apps Server mettent à jour Office W
 
 Dans le cadre du processus de mise à jour, vous devrez recréer la batterie Office Web Apps Server. Afin de préparer la recréation de la batterie Office Web Apps Server, consultez les propriétés de votre batterie Office Web Apps Server actuelle en exécutant la cmdlet Windows PowerShell**Get-OfficeWebAppsFarm**, et observez les paramètres pour [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps). Les paramètres utilisés pour **New-OfficeWebAppsFarm** doivent être identiques à ceux utilisés lors de la première installation de la batterie Office Web Apps Server.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez exécuter les tâches décrites dans cet article au moyen d'une souris, de raccourcis clavier ou d'entrées tactiles. Pour plus d'informations, consultez les ressources suivantes :
-<ul>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Raccourcis clavier</a></p></li>
-<li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249151">Entrées tactiles</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez exécuter les tâches décrites dans cet article au moyen d'une souris, de raccourcis clavier ou d'entrées tactiles. Pour plus d'informations, consultez les ressources suivantes :
+> <ul>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249150">Raccourcis clavier</a></p></li>
+> <li><p><a href="http://go.microsoft.com/fwlink/p/?linkid=249151">Entrées tactiles</a></p></li>
+> </ul>
 
 
 ## Application des mises à jour logicielles dans une batterie Office Web Apps Server à serveur unique
