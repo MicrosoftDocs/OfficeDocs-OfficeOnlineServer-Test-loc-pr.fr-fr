@@ -11,9 +11,9 @@ ms.translationtype: HT
 
 # Déployer Office Web Apps Server 
 
-_**Sapplique à :** Office Web Apps Server_
+_**Sapplique à :**  Office Web Apps Server_
 
-_**Dernière rubrique modifiée :** 2017-10-05_
+_**Dernière rubrique modifiée :**  2017-10-05_
 
 **Résumé** : Explique comment déployer Office Web Apps Server en local afin de l’utiliser avec SharePoint 2013 et Lync Server 2013.
 
@@ -51,18 +51,8 @@ Veillez à consulter ces ressources avant de commencer :
 
   - Par défaut, Office Web Apps Server vous permet d’afficher des fichiers Office, mais pas de les modifier. Pour modifier des fichiers, vous avez besoin d’une licence d’édition. Vous trouverez plus d’informations sur cette licence dans les articles [Planification d'Office Web Apps (utilisé avec SharePoint 2013)](plan-office-web-apps-used-with-sharepoint-2013.md) et [Configurer la gestion des licences dans SharePoint Server 2013](https://technet.microsoft.com/fr-fr/library/jj219627\(v=office.15\)).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vous pouvez exécuter des tâches partout dans suites Office 2013 au moyen d’une souris, de raccourcis clavier ou d’entrées tactiles. Pour plus d’informations sur l’utilisation des raccourcis clavier et des entrées tactiles avec les produits et services Office, consultez la rubrique relative aux <a href="https://go.microsoft.com/fwlink/p/?linkid=249150">raccourcis clavier</a> et le <a href="https://go.microsoft.com/fwlink/p/?linkid=253163">Guide des fonctions tactiles dans Office</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Vous pouvez exécuter des tâches partout dans suites Office 2013 au moyen d’une souris, de raccourcis clavier ou d’entrées tactiles. Pour plus d’informations sur l’utilisation des raccourcis clavier et des entrées tactiles avec les produits et services Office, consultez la rubrique relative aux <a href="https://go.microsoft.com/fwlink/p/?linkid=249150">raccourcis clavier</a> et le <a href="https://go.microsoft.com/fwlink/p/?linkid=253163">Guide des fonctions tactiles dans Office</a>.
 
 
 ## Préparer des serveurs pour l’exécution d’Office Web Apps Server
@@ -149,34 +139,14 @@ Effectuez les étapes suivantes sur tous les serveurs qui exécuteront Office We
 
 6.  Téléchargez et installez [Office Web Apps Server SP1](https://go.microsoft.com/fwlink/p/?linkid=510097) (Recommandé pour Windows Server 2012 et Windows Server 2008 R2 SP1. Requis pour Windows Server 2012 R2.)
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous appliquez Office Web Apps Server SP1 plus tard, suivez les instructions de l’article <a href="apply-software-updates-to-office-web-apps-server.md">Application de mises à jour logicielles pour Office Web Apps Server</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Si vous appliquez Office Web Apps Server SP1 plus tard, suivez les instructions de l’article <a href="apply-software-updates-to-office-web-apps-server.md">Application de mises à jour logicielles pour Office Web Apps Server</a>.
 
 
 7.  Recherchez les mises à jour Office Web Apps Server les plus récentes parmi la liste du [centre des mises à jour TechNet pour Office, les serveurs Office et les produits associés](https://go.microsoft.com/fwlink/p/?linkid=280271).
     
-    <table>
-    <thead>
-    <tr class="header">
-    <th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Si vous n’avez pas installé Office Web Apps Server SP1, appliquez les consignes décrites dans <a href="https://go.microsoft.com/fwlink/p/?linkid=296579">KB2810007</a>.</td>
-    </tr>
-    </tbody>
-    </table>
+    > [!NOTE]
+	> Si vous n’avez pas installé Office Web Apps Server SP1, appliquez les consignes décrites dans <a href="https://go.microsoft.com/fwlink/p/?linkid=296579">KB2810007</a>.
 
 
 ## Étape 3 : installer les modules linguistiques pour Office Web Apps Server
@@ -194,43 +164,19 @@ Pour installer les modules linguistiques, procédez comme suit.
 
 4.  Une fois que le programme d’installation a terminé l’installation d’Office Web Apps Server, choisissez **Fermer**.
 
-<table>
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th><img src="images/Ff431682.important(Office.15).gif" title="Important" alt="Important" /><strong>Important :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><ul>
-<li><p>Pour installer les modules linguistiques après avoir créé la batterie de serveurs Office Web Apps Server, vous devez supprimer un serveur de la batterie, installer le module linguistique dessus, puis rajouter le serveur dans la batterie.</p></li>
-<li><p>Pour que le module linguistique fonctionne correctement, vous devrez l’installer sur tous les serveurs de la batterie de serveurs.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> <ul>
+> <li><p>Pour installer les modules linguistiques après avoir créé la batterie de serveurs Office Web Apps Server, vous devez supprimer un serveur de la batterie, installer le module linguistique dessus, puis rajouter le serveur dans la batterie.</p></li>
+> <li><p>Pour que le module linguistique fonctionne correctement, vous devrez l’installer sur tous les serveurs de la batterie de serveurs.</p></li>
+> </ul>
 
 ## Déployer la batterie de serveurs Office Web Apps Server
 
 Suivez la procédure de l’une des trois sections suivantes, en fonction du type de batterie de serveurs Office Web Apps Server que vous voulez créer.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.tip(Office.15).gif" title="Conseil" alt="Conseil" /><strong>Conseil :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Si Windows PowerShell ne reconnaît pas l’applet de commande <strong>New-OfficeWebAppsFarm</strong> lorsque vous l’exécutez, vous devrez importer le module <strong>OfficeWebApps</strong>. Utilisez la commande suivante :<br />
-<code>Import-Module -Name OfficeWebApps</code></td>
-</tr>
-</tbody>
-</table>
+> [!TIP]
+> Si Windows PowerShell ne reconnaît pas l’applet de commande <strong>New-OfficeWebAppsFarm</strong> lorsque vous l’exécutez, vous devrez importer le module <strong>OfficeWebApps</strong>. Utilisez la commande suivante :<br />
+<code>Import-Module -Name OfficeWebApps</code>
 
 
 ## Déployer une batterie Office Web Apps Server à serveur unique qui utilise le protocole HTTP
@@ -341,18 +287,8 @@ urlsrc="https://wac.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><r
 default="true" ext="xls"/><action name="view" 
 ```
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Selon les paramètres de sécurité de votre navigateur web, il est possible qu’un message vous invite à sélectionner <strong>Afficher tout le contenu</strong> avant de pouvoir afficher le contenu du fichier XML de découverte.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Selon les paramètres de sécurité de votre navigateur web, il est possible qu’un message vous invite à sélectionner <strong>Afficher tout le contenu</strong> avant de pouvoir afficher le contenu du fichier XML de découverte.
 
 
 ## Étape 3 : configurer l’hôte
@@ -419,18 +355,8 @@ Si Office Web Apps Server fonctionne comme prévu, vous devriez voir apparaître
     <wopi-discovery><net-zone name="internal-https"><app name="Excel" checkLicense="true" favIconUrl="https://officewebapps.contoso.com/x/_layouts/images/FavIcon_Excel.ico"><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="ods"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xls"/><action name="view" urlsrc="https://officewebapps.contoso.com/x/_layouts/xlviewerinternal.aspx?<ui=UI_LLCC&><rs=DC_LLCC&>" default="true" ext="xlsb"/> 
 ```
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Selon les paramètres de sécurité de votre navigateur web, il est possible qu’un message vous invite à sélectionner <strong>Afficher tout le contenu</strong> avant de pouvoir afficher le contenu du fichier XML de découverte.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Selon les paramètres de sécurité de votre navigateur web, il est possible qu’un message vous invite à sélectionner <strong>Afficher tout le contenu</strong> avant de pouvoir afficher le contenu du fichier XML de découverte.
 
 
 ## Étape 4 : configurer l’hôte

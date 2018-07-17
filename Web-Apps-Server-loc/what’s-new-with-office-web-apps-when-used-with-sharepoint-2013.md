@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Sapplique à :** Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-16_
+_**Dernière rubrique modifiée :** 2016-12-16_
 
 **Résumé** : décrit les nouvelles fonctionnalités dont disposent les utilisateurs et les administrateurs SharePoint 2013 lors de l’utilisation d’Office Web Apps.
 
@@ -68,18 +68,8 @@ Les utilisateurs qui travaillent avec des fichiers Office dans des bibliothèque
 </table>
 
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le service de diffusion PowerPoint n’est plus disponible dans SharePoint 2013. Il est cependant toujours disponible via OneDrive et Lync Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le service de diffusion PowerPoint n’est plus disponible dans SharePoint 2013. Il est cependant toujours disponible via OneDrive et Lync Server 2013.
 
 
 ### Les professionnels de l’informatique obtiennent de nouvelles fonctionnalités d’installation et de gestion des licences

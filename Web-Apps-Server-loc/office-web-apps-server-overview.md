@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps Server_
+_**Sapplique à :** Office Web Apps Server_
 
-_**Dernière rubrique modifiée :**2017-05-26_
+_**Dernière rubrique modifiée :** 2017-05-26_
 
 **Résumé :** découvrez Office Web Apps Server et sa fonctionnalité Office dans un navigateur pour les hôtes pris en charge.
 
@@ -23,20 +23,9 @@ _**Dernière rubrique modifiée :**2017-05-26_
 
 Office Web Apps Server est un nouveau produit du serveur Office qui offre des versions de Word, PowerPoint, Excel et OneNote basées sur le navigateur. Une seule batterie Office Online Server peut prendre en charge des utilisateurs qui accèdent aux fichiers Office via SharePoint 2013, Lync Server 2013, des dossiers partagés et des sites web. Le nouveau modèle de déploiement autonome signifie que vous pouvez gérer des mises à jour de votre batterie Office Online Server indépendamment des autres produits du serveur Office déployés dans votre organisation.
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/Ff431682.important(Office.15).gif" title="Important" alt="Important" /><strong>Important :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Cet article s’inscrit dans la <a href="content-roadmap-for-office-web-apps-server.md">Feuille de route de contenu pour Office Web Apps</a>. Utilisez cette feuille de route comme point de départ pour accéder à des articles, téléchargements et vidéos qui vous aideront à déployer et gérer Office Web Apps Server.<br />
-<strong>Vous souhaitez obtenir de l’aide sur Office Web Apps sur les ordinateurs de bureau ou appareils mobiles ?</strong> Pour trouver les informations qui vous intéressent, recherchez « Office Web Apps » sur <a href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
-
+> [!IMPORTANT]
+> Cet article s’inscrit dans la <a href="content-roadmap-for-office-web-apps-server.md">Feuille de route de contenu pour Office Web Apps</a>. Utilisez cette feuille de route comme point de départ pour accéder à des articles, téléchargements et vidéos qui vous aideront à déployer et gérer Office Web Apps Server.<br />
+<strong>Vous souhaitez obtenir de l’aide sur Office Web Apps sur les ordinateurs de bureau ou appareils mobiles ?</strong> Pour trouver les informations qui vous intéressent, recherchez « Office Web Apps » sur <a href="https://go.microsoft.com/fwlink/p/?linkid=324961">Office.com</a>.
 
 Contenu de cet article :
 
@@ -70,18 +59,8 @@ L'illustration suivante résume les capacités d'affichage et de modification d'
 
 ![Graphique résumant les capacités d’affichage et de modification d’Office Web Apps sur différents types d’appareils. Il met en évidence ceux optimisés pour les écrans tactiles.](images/Ff431685.8bf76669-f511-4e02-8ed3-d658e9e746f0(Office.15).gif "Graphique résumant les capacités d’affichage et de modification d’Office Web Apps sur différents types d’appareils. Il met en évidence ceux optimisés pour les écrans tactiles.")
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Le service de diffusion PowerPoint a été supprimé de SharePoint 2013. Il est accessible par le biais de OneDrive et de Lync Server 2013.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Le service de diffusion PowerPoint a été supprimé de SharePoint 2013. Il est accessible par le biais de OneDrive et de Lync Server 2013.
 
 
 Pour plus d'informations sur les nouveautés de Office Web Apps, consultez la rubrique [Fonctionnement de Office Web Apps sur site avec SharePoint 2013](how-office-web-apps-work-on-premises-with-sharepoint-2013.md).
@@ -114,18 +93,8 @@ Office Web Apps Server fournit une page à l'adresse http://*OfficeWebAppsServer
 
 Pour plus d'informations sur les visionneuses en ligne, consultez la rubrique [Planning for Online Viewers with Office Web Apps Server](plan-office-web-apps-server.md).
 
-<table>
-<thead>
-<tr class="header">
-<th><img src="images/JJ219459.note(Office.15).gif" title="Remarque" alt="Remarque" /><strong>Remarque :</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Microsoft héberge une version exclusivement destinée à Internet de Création d'une URL sur <a href="http://go.microsoft.com/fwlink/?linkid=256548">Office.com</a>.</td>
-</tr>
-</tbody>
-</table>
+> [!NOTE]
+> Microsoft héberge une version exclusivement destinée à Internet de Création d'une URL sur <a href="http://go.microsoft.com/fwlink/?linkid=256548">Office.com</a>.
 
 
 ## Voir aussi

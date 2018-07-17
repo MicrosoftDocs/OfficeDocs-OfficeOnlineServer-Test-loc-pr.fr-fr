@@ -13,9 +13,9 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :**Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
+_**Sapplique à :** Office Web Apps, Office Web Apps Server, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Dernière rubrique modifiée :**2016-12-16_
+_**Dernière rubrique modifiée :** 2016-12-16_
 
 **Résumé :** contient des articles qui vous aideront à utiliser Office Web Apps Server dans l’architecture Office Web Apps récemment mise à jour.
 
