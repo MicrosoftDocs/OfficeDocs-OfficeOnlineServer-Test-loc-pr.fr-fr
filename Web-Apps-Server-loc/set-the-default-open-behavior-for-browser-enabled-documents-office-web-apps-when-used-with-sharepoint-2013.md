@@ -1,4 +1,4 @@
-﻿---
+---
 title: Comportement d’ouverture par défaut des documents (Office Web Apps)
 TOCTitle: Configuration du comportement d’ouverture par défaut des documents activés pour le navigateur
 ms:assetid: e27e0bc8-5fb5-4bb1-8157-d7c90654175e
@@ -99,9 +99,9 @@ Utilisez l’une des procédures suivantes pour définir la fonctionnalité Open
       ```PowerShell  
             Enable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
       ```
-      ```  
-        où *\<SiteCollURL\>* correspond à l’URL de la collection de sites.
-      ```
+      
+      où *\<SiteCollURL\>* correspond à l’URL de la collection de sites.
+      
     
       - Pour activer la fonctionnalité OpenInClient pour toutes les collections de sites (pour ouvrir les documents dans l’application cliente), entrez la commande suivante :
 
@@ -115,7 +115,7 @@ Utilisez l’une des procédures suivantes pour définir la fonctionnalité Open
             Disable-SPFeature 8A4B8DE2-6FD8-41e9-923C-C7C3C00F8295 -url <SiteCollURL>
       ```
         
-        où *\<SiteCollURL\>* correspond à l’URL de la collection de sites.
+      où *\<SiteCollURL\>* correspond à l’URL de la collection de sites.
     
       - Pour désactiver la fonctionnalité OpenInClient pour toutes les collections de sites (pour ouvrir les documents dans le navigateur), entrez la commande suivante :
 
