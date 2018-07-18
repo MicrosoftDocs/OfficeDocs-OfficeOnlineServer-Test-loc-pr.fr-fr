@@ -11,12 +11,9 @@ ms.translationtype: HT
 
 # Application de mises à jour logicielles pour Office Web Apps Server
 
- 
-
-_<strong>Sapplique à :</strong>Office Web Apps Server_
+ _<strong>Sapplique à :</strong>Office Web Apps Server_
 
 _<strong>Dernière rubrique modifiée :</strong>2016-12-16_
-=======
 
 
 **Résumé** : explique comment appliquer des mises à jour logicielles dans une batterie de serveurs Office Web Apps Server.
