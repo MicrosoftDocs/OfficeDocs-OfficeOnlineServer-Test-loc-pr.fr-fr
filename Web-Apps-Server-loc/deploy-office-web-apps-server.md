@@ -11,9 +11,10 @@ ms.translationtype: HT
 
 # Déployer Office Web Apps Server 
 
-_**Sapplique à :**  Office Web Apps Server_
+_<strong>Sapplique à :</strong>Office Web Apps Server_
 
-_**Dernière rubrique modifiée :**  2017-10-05_
+_<strong>Dernière rubrique modifiée :</strong>2017-10-05_
+
 
 **Résumé** : Explique comment déployer Office Web Apps Server en local afin de l’utiliser avec SharePoint 2013 et Lync Server 2013.
 
@@ -375,9 +376,12 @@ Si des fonctionnalités de .NET Framework 3.5 ont été installées puis suppri
 
 ```PowerShell
     %systemroot%\Microsoft.NET\Framework64\v4.0.30319\aspnet_regiis.exe -iru
+```
 
+```PowerShell
     iisreset /restart /noforce
 ```
+
 **Pour Windows Server 2012 ou Windows Server 2012 R2**
 
 ```PowerShell

@@ -13,9 +13,11 @@ ms.translationtype: HT
 
  
 
-_**Sapplique à :** Office Web Apps Server_
+_<strong>Sapplique à :</strong>Office Web Apps Server_
 
-_**Dernière rubrique modifiée :** 2016-12-16_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-16_
+=======
+
 
 **Résumé** : explique comment appliquer des mises à jour logicielles dans une batterie de serveurs Office Web Apps Server.
 
@@ -59,7 +61,9 @@ Pour appliquer des mises à jour logicielles dans une batterie Office Web Apps S
 
 2.  Sur le Office Web Apps Server sur lequel vous voulez appliquer la mise à jour logicielle, ouvrez l'invite Windows PowerShell en tant qu'administrateur et exécutez la commande suivante.
     
+    ```PowerShell
         Remove-OfficeWebAppsMachine
+    ```
 
 3.  Installez la mise à jour Office Web Apps Server sur ce serveur. Si vous y êtes invité, redémarrez le serveur.
 
@@ -67,7 +71,9 @@ Pour appliquer des mises à jour logicielles dans une batterie Office Web Apps S
     
     Le code de l'exemple suivant crée une batterie Office Web Apps Server appelée http://Contoso-WAC.
     
+    ```PowerShell
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
+    ```
     
     Des paramètres supplémentaires pour configurer les services de traduction, les serveurs proxy, la prise en charge des images clipart et les visionneuses en ligne sont décrits dans la rubrique [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
@@ -83,7 +89,9 @@ Pour appliquer des mises à jour logicielles à une batterie Office Web Apps Ser
 
 3.  Sur ce serveur Office Web Apps Server, ouvrez l'invite Windows PowerShell en tant qu'administrateur et exécutez la commande suivante.
     
+    ```PowerShell
         Remove-OfficeWebAppsMachine
+    ```
 
 4.  Installez la mise à jour Office Web Apps Server sur ce serveur. Si vous y êtes invité, redémarrez le serveur.
 
@@ -91,7 +99,9 @@ Pour appliquer des mises à jour logicielles à une batterie Office Web Apps Ser
     
     Le code de l'exemple suivant crée une batterie Office Web Apps Server appelée http://Contoso-WAC.
     
+    ```PowerShell
         New-OfficeWebAppsFarm -InternalURL "http://Contoso-WAC" -AllowHttp -EditingEnabled
+    ```
     
     Des paramètres supplémentaires pour configurer les services de traduction, les serveurs proxy, la prise en charge des images clipart et les visionneuses en ligne sont décrits dans la rubrique [New-OfficeWebAppsFarm](https://docs.microsoft.com/en-us/powershell/module/officewebapps/new-officewebappsfarm?view=officewebapps-ps).
 
@@ -105,7 +115,9 @@ Pour appliquer des mises à jour logicielles à une batterie Office Web Apps Ser
     
     3.  Ouvrez l'invite Windows PowerShell en tant qu'administrateur et exécutez la commande suivante. Le paramètre **–MachineToJoin** ajoute le serveur actuel à une batterie Office Web Apps Server existante. Dans le cas présent, vous voulez ajouter le serveur à la batterie Office Web Apps Server mise à jour. Utilisez donc le nom de l'ordinateur de l'un des serveurs de la batterie Office Web Apps Server mise à jour.
         
+        ```PowerShell
             New-OfficeWebAppsMachine -MachineToJoin "server1.contoso.com"
+        ```
 
 ## Voir aussi
 

@@ -11,11 +11,9 @@ ms.translationtype: HT
 
 # Configuration du comportement d’ouverture par défaut des documents activés pour le navigateur (Office Web Apps dans le cadre d’une utilisation avec SharePoint 2013)
 
- 
+_<strong>Sapplique à :</strong>Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
 
-_**Sapplique à :**  Office Web Apps, SharePoint Foundation 2013, SharePoint Server 2013_
-
-_**Dernière rubrique modifiée :**  2016-12-16_
+_<strong>Dernière rubrique modifiée :</strong>2016-12-16_
 
 **Résumé :** décrit comment configurer le comportement d'ouverture par défaut pour les documents Office dans les collections de sites et bibliothèques de documents SharePoint.
 
