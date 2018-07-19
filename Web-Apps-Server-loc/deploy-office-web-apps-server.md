@@ -200,7 +200,7 @@ Utilisez la commande **New-OfficeWebAppsFarm** pour créer une batterie de serve
 
 **Paramètres**
 
-  - **–InternalURL** est le nom du serveur qui exécute Office Web Apps Server (par exemple, **http://nom\_serveur**).
+  - **–InternalURL** est le nom du serveur qui exécute Office Web Apps Server (par exemple, **http://nom_serveur**).
 
   - **–AllowHttp** configure la batterie de serveurs pour utiliser le protocole HTTP.
 
